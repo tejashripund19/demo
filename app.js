@@ -11,7 +11,7 @@ const { provideErrorHandler } = require("./middleware");
 app.use(bodyParser.json());
 app.use(provideErrorHandler);
 
-app.use("/api/v1/users", userRouter);
+app.use("/", userRouter);
 
 module.exports = app;
 
